@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>bi-BPCA by fanchi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>bi-BPCA</h1>
+        <p>Imputing missing values in microarray data</p>
+
+        <p class="view"><a href="https://github.com/fanchi/bi-BPCA">View the Project on GitHub <small>fanchi/bi-BPCA</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/fanchi/bi-BPCA/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/fanchi/bi-BPCA/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/fanchi/bi-BPCA">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="bi-bpca" class="anchor" href="#bi-bpca" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>bi-BPCA</h1>
+
+<p>Imputing missing values in microarray data</p>
+
+<h1>
+<a id="before-running-this-method" class="anchor" href="#before-running-this-method" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Before running this method</h1>
+
+<p>The missing values in matrices are represented by 'NaN' in the Matlab .mat file. Before running this method, all missing values in your data should be converted as the form of 'NaN'.  </p>
+
+<p>This method is time consuming, please allow adequate time for running.  </p>
+
+<p>Folders attachment, bi-BPCA and BPCA should be added into current working directory.</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>[matrix_imputed] = f_bicluster_BPCA ([matrix_missing], [number of iterations])</p>
+
+<h1>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h1>
+
+<p>M_imputed = f_bicluster_BPCA(M_missing, 1);</p>
+
+<h1>
+<a id="citation" class="anchor" href="#citation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Citation</h1>
+
+<p>F. Meng, C. Cai, and H. Yan, "A Bicluster-Based Bayesian Principal Component Analysis Method for Microarray Missing Value Estimation," Biomedical and Health Informatics, IEEE Journal of, vol. 18, pp. 863-871, 2014.</p>
+
+<h1>
+<a id="acknowledgement" class="anchor" href="#acknowledgement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgement</h1>
+
+<p>The scripts in the BPCA folder are slightly modified from the code of<br>
+S. Oba, M.-a. Sato, I. Takemasa, M. Monden, K.-i. Matsubara, and S. Ishii, "A Bayesian missing value estimation method for gene expression profile data," Bioinformatics, vol. 19, pp. 2088-2096, November 1, 2003.<br>
+Original source of BPCA is available at <a href="http://ishiilab.jp/member/oba/tools/BPCAFill.html">http://ishiilab.jp/member/oba/tools/BPCAFill.html</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/fanchi">fanchi</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
